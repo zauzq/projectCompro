@@ -25,7 +25,8 @@ int main(){
     string name ,surname, wf ,number ;
     system("mode 0,0");
     system("COLOR 3F");
-    do{
+    do
+    {
         system("cls");
         Shownamehotel();
             cout<< endl << "        Please input your presonal information"<<endl;
@@ -42,7 +43,7 @@ int main(){
             system("cls") ;
 
         Shownamehotel() ;
-        cout << endl ;
+            cout << endl ;
             cout<<"        Please input your presonal information"<<endl;
             cout<<endl;
             cout<<"        **************************************************************"<<endl;
@@ -63,31 +64,33 @@ int main(){
             cout << "         2. A twin room. 600 bath/night :" ;
             cin >> room2 ;
             sum2=(600*room2)*hmn;
-        total = sum1+sum2 ;
-        cout<<"        Price : "<<total<<" bath"<<endl ;
+            total = sum1+sum2 ;
+            cout<<"        Price : "<<total<<" bath"<<endl ;
         system("cls") ;
         Shownamehotel() ;
-        cout<<"        Name : "<<name<<" "<<surname<<endl;
-        cout<<"        Age : "<<" years old"<<endl ;
-        cout<<"        Tel. : "<<number<<endl ;
-        cout<<"        Day "<<wf<<endl ;
-        cout<<"        How long will you stay : "<<hmn<<" night"<<endl ;
-        cout<<"        guests : "<<g<<" people"<<endl;
-        cout<<"         1. A double room. : "<<room1<<endl ;
-        cout<<"         2. A twin room. : "<<room2<<endl ;
-        cout<<"        Price : "<<total<<" bath"<<endl ;
-        cout<<"        ___________________________________________________________" ;
-        cout<<endl ;
-        cout<<"        Please verty that the information is correct or not."<<endl ;
-        cout<<"        Yes =1 or No =0"<<endl;
-        cout<<"        Input number : ";
-        cin >> yn ;
-    }while(yn == 0) ;
-        if(yn == 1){
-        system("cls");
-        Shownamehotel();
-        cout << endl ;
-        cout << "        ********************thaks completion list*********************" ;
+            cout<<"        Name : "<<name<<" "<<surname<<endl;
+            cout<<"        Age : "<<" years old"<<endl ;
+            cout<<"        Tel. : "<<number<<endl ;
+            cout<<"        Day "<<wf<<endl ;
+            cout<<"        How long will you stay : "<<hmn<<" night"<<endl ;
+            cout<<"        guests : "<<g<<" people"<<endl;
+            cout<<"         1. A double room. : "<<room1<<endl ;
+            cout<<"         2. A twin room. : "<<room2<<endl ;
+            cout<<"        Price : "<<total<<" bath"<<endl ;
+            cout<<"        ___________________________________________________________" ;
+            cout<<endl ;
+            cout<<"        Please verty that the information is correct or not."<<endl ;
+            cout<<"        Yes =1 or No =0"<<endl;
+            cout<<"        Input number : ";
+            cin >> yn ;
+    }
+    while(yn == 0) ;
+        if(yn == 1)
+        {
+            system("cls");
+            Shownamehotel();
+            cout << endl ;
+            cout << "        ********************thaks completion list*********************" ;
         }
         getch();
     return 0 ;
