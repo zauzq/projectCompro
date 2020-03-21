@@ -77,7 +77,7 @@ int main(){
             cout<<"         1. A double room. : "<<room1<<endl ;
             cout<<"         2. A twin room. : "<<room2<<endl ;
             cout<<"        Price : "<<total<<" bath"<<endl ;
-            cout<<"        ___________________________________________________________" ;
+            cout<<"        ______________________________________________________________" ;
             cout<<endl ;
             cout<<"        Please verty that the information is correct or not."<<endl ;
             cout<<"        Yes =1 or No =0"<<endl;
