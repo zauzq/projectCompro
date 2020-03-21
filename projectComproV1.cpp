@@ -42,15 +42,39 @@ int main(){
             cout<<"Day (d/m/25xx) :" ;
             cin>>wf ;
             cout<<"How many night ? :" ;
+            cin>>hmn ;
             cout<<"How many guests will thre be ? :" ;
             cin >> g ;
             cout << endl << "And would you like a romm ?"<<endl ;
-            cout << " 1. A double room. 600bath/night :";
+            cout << " 1. A double room. 600 bath/night :";
             cin >> room1 ;
-            sum1=(600*room1)*hmn;
-            
-
-    }
-
+            sum1=(800*room1)*hmn;
+            cout << " 2. A twin room. 600 bath/night :" ;
+            cin >> room2 ;
+            sum2=(600*room2)*hmn;
+        total = sum1+sum2 ;
+        cout<<"Price : "<<total<<" bath"<<endl ;
+        system("cls") ;
+        Shownamehotel() ;
+        cout<<"Name : "<<name<<" "<<surname<<endl<<"Age : "<<" years old"<<endl ;
+        cout<<"Tel. : "<<number<<endl ;
+        cout<<"Day "<<wf<<endl ;
+        cout<<"How long will you stay : "<<hmn<<" night"<<endl ;
+        cout<<"guests : "<<g<<" people"<<endl;
+        cout<<" 1. A double room. : "<<room1<<endl ;
+        cout<<" 2. A twin room. : "<<room2<<endl ;
+        cout<<"Price : "<<total<<" bath"<<endl ;
+        cout<<"___________________________________________________________" ;
+        cout<<endl ;
+        cout<<"Please verty that the information is correct or not."<<endl ;
+        cout<<"Yes =1 or No =0";
+        cin >> yn ;
+    }while(yn == 0) ;
+        if(yn == 1){
+        system("cls");
+        Shownamehotel();
+        cout << endl ;
+        cout << "*********************thaks completion list*********************" ;
+        }
     return 0 ;
 }
