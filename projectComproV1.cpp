@@ -4,35 +4,53 @@
 
 using namespace std ;
 
+void Shownamehotel(){
+    cout << "               **************************************************************\n" ;
+    cout << "               *                                                            *\n" ;
+    cout << "               *                   Compro project Hotel                     *\n";
+    cout << "               *                                                            *\n" ;
+    cout << "               **************************************************************\n" ;
+}
+
 int main(){
-    string name ;
-    string word ;
-    int start = 0 ;
-    cout << "Hotel: Hello can you tell me your name ?\n";
-    cout << "??????:" ;
-    getline(cin,name) ;
-    cout << "Hotel: Is there anything We can help you with ?\n" ;
-    cout << name << ": " ;
-    getline(cin,word) ;
-    int end = word.find_first_of(" ") ;
-    while(end != -1){
-    if(word.substr(start,end-start) == "reservation"){
-        cout << "bigloso" ;
-        end = word.find_first_of(" ") ;
-        break ;
-        }
-        start = end+1 ;
-        end = word.find_first_of(" ",start);
+    int age , hmn , room , hmr ,room1 ,room2, sum1,sum2 ,total ,yn,g ;
+    string name ,surname, wf ,number ;
+    do{
+        system("cls");
+        Shownamehotel();
+            cout<<"Please input your presonal information"<<endl;
+            cout<<"**************************************"<<endl;
+            cout<<endl;
+            cout<<"Please input your name : ";
+            cin>>name ;
+            cout<<"Please input your surname : ";
+            cin>>surname ;
+            cout<<"Please input your age : ";
+            cin>> age ;
+            cout<<"Please input your phone number : " ;
+            cin >> number ;
+            system("cls") ;
+
+        Shownamehotel() ;
+        cout << endl ;
+            cout<<"Please input your presonal information"<<endl;
+            cout<<"**************************************"<<endl;
+            cout<<endl;
+            cout<<"Name : "<<name <<" "<<surname<<endl<<endl ;
+            cout<<"________________________________"<<endl<<endl ;
+            cout<<"When for ?"<<endl ;
+            cout<<"Day (d/m/25xx) :" ;
+            cin>>wf ;
+            cout<<"How many night ? :" ;
+            cout<<"How many guests will thre be ? :" ;
+            cin >> g ;
+            cout << endl << "And would you like a romm ?"<<endl ;
+            cout << " 1. A double room. 600bath/night :";
+            cin >> room1 ;
+            sum1=(600*room1)*hmn;
+            
+
     }
-    while(end != -1){
-    if(word.substr(start,end-start) == "description"){
-        cout << "bigloso" ;
-        end = word.find_first_of(" ") ;
-        break ;
-        }
-        start = end+1 ;
-        end = word.find_first_of(" ",start);
-    }
-    
+
     return 0 ;
 }
