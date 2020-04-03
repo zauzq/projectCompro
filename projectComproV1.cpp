@@ -22,6 +22,48 @@ void Shownamehotel(){
     
 }
 
+// void moveText(string inputStr, int scrLen)
+// {
+//     string displatScr="";
+//     int inputStrLen=inputStr.length();
+
+//     if(inputStrLen<scrLen)
+//     {
+
+//         inputStr.append(scrLen-inputStrLen,' ');
+//         inputStrLen=inputStr.length();
+//     }
+
+//     int i=0,j=0;
+
+//     while(true)
+//     {
+//         if(i+scrLen<inputStrLen)
+//         {
+//             displatScr=inputStr.substr(i,scrLen);
+//             cout << displatScr << endl;
+//             system("cls");
+//         }
+//         else
+//         {
+
+//             displatScr=inputStr.substr(i,inputStrLen-i)+inputStr.substr(0,j);
+//             cout << displatScr << endl;
+//             system("cls");
+//             j++;
+//         }
+//         i++;
+//         if(i==inputStrLen)
+//         {
+//             i=0;
+//         }
+//         if(j==scrLen)
+//         {
+//             j=0;
+//         }
+//     }
+// }
+
 int main(){
     int age , hmn , room , hmr ,room1 ,room2, sum1,sum2 ,total ,yn,g ;
     string name ,surname, wf ,number ;
@@ -109,7 +151,7 @@ int main(){
             system("cls");
             Shownamehotel();
             cout << endl ;
-             cout<< space << "Name : "<<name<<" "<<surname<<endl;
+            cout<< space << "Name : "<<name<<" "<<surname<<endl;
             cout<< space << "Age : "<< age <<" years old"<<endl ;
             cout<< space << "Tel. : "<<number<<endl ;
             cout<< space << "Day "<<wf<<endl ;
@@ -130,6 +172,6 @@ int main(){
             
             cout << space <<  "********************thaks completion list*********************" ;
         }
-       
+    // moveText("********************thaks completion list*********************",200);
     return 0 ;
 }
