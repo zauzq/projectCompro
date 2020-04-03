@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include <conio.h>
+#include <fstream>
+#include <vector>
 using namespace std;
 #ifdef _MSC_VER
 #define getch() _getch()
@@ -26,6 +28,20 @@ int main(){
     string space = "                           " ;
     system("mode 0,0");
     system("COLOR 3F");
+    string textline ;
+    ifstream source ;
+    vector <string> nameroom ;
+    vector <float> roompass ;
+    source.open("room39.txt") ;
+    while(getline(source,textline)){
+        char format[] = "%[^:]: %f" ;
+        char room[100] ;
+        float pass , b , c ;
+        sscanf(textline.c_str(),format,room,&pass) ;
+        nameroom.push_back(room) ;
+        roompass.push_back(pass) ;
+    }
+
     do
     {
         system("cls");
@@ -58,25 +74,25 @@ int main(){
             cin>>wf ;
             cout<< space << "How many night ? :" ;
             cin>>hmn ;
-            cout<< space << "How many guests will thre be ? :" ;
-            cin >> g  ;
-            cout<<space << "And would you like a romm ?"<<endl ;
-            cout << space <<  "1. A double room. 800 bath/night :";
+           /* cout<< space << "How many guests will thre be ? :" ;
+            cin >> g  ;*/
+            cout<<space << "And would you like a room ?"<<endl ;
+            cout << space <<  "1. A double room. 600 bath/night :";
             cin >> room1  ;
-            sum1=(800*room1)*hmn;
-            cout << space <<  "2. A twin room. 600 bath/night :" ;
+            sum1=(600*room1)*hmn;
+            cout << space <<  "2. A twin room. 800 bath/night :" ;
             cin >> room2 ;
-            sum2=(600*room2)*hmn;
+            sum2=(800*room2)*hmn;
             total = sum1+sum2 ;
             cout<< space << "Price : "<<total<<" bath"<<endl ;
         system("cls") ;
         Shownamehotel() ;
             cout<< space << "Name : "<<name<<" "<<surname<<endl;
-            cout<< space << "Age : "<<" years old"<<endl ;
+            cout<< space << "Age : "<< age <<" years old"<<endl ;
             cout<< space << "Tel. : "<<number<<endl ;
             cout<< space << "Day "<<wf<<endl ;
             cout<< space << "How long will you stay : "<<hmn<<" night"<<endl ;
-            cout<< space << "guests : "<<g<<" people"<<endl;
+           // cout<< space << "guests : "<<g<<" people"<<endl;
             cout<< space << " 1. A double room. : "<<room1<<endl ;
             cout<< space << " 2. A twin room. : "<<room2<<endl ;
             cout<< space << "Price : "<<total<<" bath"<<endl ;
@@ -93,8 +109,27 @@ int main(){
             system("cls");
             Shownamehotel();
             cout << endl ;
+             cout<< space << "Name : "<<name<<" "<<surname<<endl;
+            cout<< space << "Age : "<< age <<" years old"<<endl ;
+            cout<< space << "Tel. : "<<number<<endl ;
+            cout<< space << "Day "<<wf<<endl ;
+            cout<< space << "How long will you stay : "<<hmn<<" night"<<endl ;
+            cout<< space << " 1. A double room. : "<<room1<<endl ;
+            cout<< space << " 2. A twin room. : "<<room2<<endl ;
+            cout<< space << "Price : "<<total<<" bath"<<endl ;
+            room2 = room2 + 6 ;
+            
+                for(int i =0 ; i<room1 ; i++){
+                cout<<space << nameroom[i] <<"password is :"<<roompass[i]<<endl ;
+                }
+            
+            
+                for(int j =6 ; j<room2;j++){
+                cout<<space << nameroom[j] <<"password is :"<<roompass[j]<<endl ;
+                }
+            
             cout << space <<  "********************thaks completion list*********************" ;
         }
-        getch();
+       
     return 0 ;
 }
