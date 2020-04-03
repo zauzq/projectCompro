@@ -118,14 +118,14 @@ int main(){
             cout<< space << " 2. A twin room. : "<<room2<<endl ;
             cout<< space << "Price : "<<total<<" bath"<<endl ;
             room2 = room2 + 6 ;
-            
+            cout<< space << "your room password is : "<<endl ;
                 for(int i =0 ; i<room1 ; i++){
-                cout<<space << nameroom[i] <<"password is :"<<roompass[i]<<endl ;
+                cout<<space << nameroom[i] <<" password is :"<<roompass[i]<<endl ;
                 }
             
             
                 for(int j =6 ; j<room2;j++){
-                cout<<space << nameroom[j] <<"password is :"<<roompass[j]<<endl ;
+                cout<<space << nameroom[j] <<" password is :"<<roompass[j]<<endl ;
                 }
             
             cout << space <<  "********************thaks completion list*********************" ;
