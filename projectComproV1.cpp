@@ -176,7 +176,7 @@ int main(){
             cout << space << "Press Enter 1 times to exit the program.";
             cin.get();
             cin.get();
-            moveText("****************THANKS COMPLATION LIST****************Thank you for booking****************",50) ;
+            moveText("***************THANKS COMPLATION LIST*************Thank you for booking***************",113) ;
         }
     
     return 0 ;
