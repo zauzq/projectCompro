@@ -22,54 +22,54 @@ void Shownamehotel(){
     
 }
 
-// void moveText(string inputStr, int scrLen)
-// {
-//     string displatScr="";
-//     int inputStrLen=inputStr.length();
+void moveText(string inputStr, int scrLen)
+{
+    string displatScr="";
+    int inputStrLen=inputStr.length();
 
-//     if(inputStrLen<scrLen)
-//     {
+    if(inputStrLen<scrLen)
+    {
 
-//         inputStr.append(scrLen-inputStrLen,' ');
-//         inputStrLen=inputStr.length();
-//     }
+        inputStr.append(scrLen-inputStrLen,' ');
+        inputStrLen=inputStr.length();
+    }
 
-//     int i=0,j=0;
+    int i=0,j=0;
 
-//     while(true)
-//     {
-//         if(i+scrLen<inputStrLen)
-//         {
-//             displatScr=inputStr.substr(i,scrLen);
-//             cout << displatScr << endl;
-//             system("cls");
-//         }
-//         else
-//         {
+    while(true)
+    {
+        if(i+scrLen<inputStrLen)
+        {
+            displatScr=inputStr.substr(i,scrLen);
+            cout << displatScr << endl;
+            system("cls");
+        }
+        else
+        {
 
-//             displatScr=inputStr.substr(i,inputStrLen-i)+inputStr.substr(0,j);
-//             cout << displatScr << endl;
-//             system("cls");
-//             j++;
-//         }
-//         i++;
-//         if(i==inputStrLen)
-//         {
-//             i=0;
-//         }
-//         if(j==scrLen)
-//         {
-//             j=0;
-//         }
-//     }
-// }
+            displatScr=inputStr.substr(i,inputStrLen-i)+inputStr.substr(0,j);
+            cout << displatScr << endl;
+            system("cls");
+            j++;
+        }
+        i++;
+        if(i==inputStrLen)
+        {
+            i=0;
+        }
+        if(j==scrLen)
+        {
+            j=0;
+        }
+    }
+}
 
 int main(){
     int age , hmn , room , hmr ,room1 ,room2, sum1,sum2 ,total ,yn,g ;
     string name ,surname, wf ,number ;
     string space = "                           " ;
     system("mode 0,0");
-    system("COLOR 3F");
+    system("COLOR 9F");
     string textline ;
     ifstream source ;
     vector <string> nameroom ;
@@ -170,8 +170,14 @@ int main(){
                 cout<<space << nameroom[j] <<" password is :"<<roompass[j]<<endl ;
                 }
             
-            cout << space <<  "********************thaks completion list*********************" ;
+            cout << endl ;
+            cout << space << "**************************************************************" << endl ;
+            cout << endl ;
+            cout << space << "Press Enter 1 times to exit the program.";
+            cin.get();
+            cin.get();
+            moveText("****************THANKS COMPLATION LIST****************Thank you for booking****************",50) ;
         }
-    // moveText("********************thaks completion list*********************",200);
+    
     return 0 ;
 }
