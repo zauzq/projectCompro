@@ -89,7 +89,7 @@ int main(){
         system("cls");
         Shownamehotel();
             cout<< endl << space << "Please input your presonal information"<<endl;
-            cout<< endl << space <<  "______________________________________________________________"<<endl;
+            cout<< endl << space <<  "____________________________________________________________"<<endl;
             cout<<endl;
             cout<< space << "Please input your name : ";
             cin>>name ;
@@ -105,12 +105,12 @@ int main(){
             cout << endl ;
             cout<< space << "Please input your presonal information"<<endl;
             cout<<endl;
-            cout<< space << "______________________________________________________________"<<endl;
+            cout<< space << "____________________________________________________________"<<endl;
             cout<<endl;
             cout<< space << "Name : "<<name <<" "<<surname<<endl ;
             cout<< space << "Age  : "<<age <<endl ;
             cout<< space << "Phone number :"<< number <<endl;
-            cout<< space << "______________________________________________________________"<<endl<<endl ;
+            cout<< space << "____________________________________________________________"<<endl<<endl ;
             cout<< space << "When for ?"<<endl ;
             cout<< space << "Day (d/m/25xx) :" ;
             cin>>wf ;
@@ -138,7 +138,7 @@ int main(){
             cout<< space << " 1. A double room. : "<<room1<<endl ;
             cout<< space << " 2. A twin room. : "<<room2<<endl ;
             cout<< space << "Price : "<<total<<" bath"<<endl ;
-            cout<< space << "______________________________________________________________" ;
+            cout<< space << "____________________________________________________________" ;
             cout<<endl ;
             cout<< space << "Please verty that the information is correct or not."<<endl ;
             cout<< space << "Yes =1 or No =0"<<endl;
@@ -171,12 +171,12 @@ int main(){
                 }
             
             cout << endl ;
-            cout << space << "**************************************************************" << endl ;
+            cout << space << "************************************************************" << endl ;
             cout << endl ;
             cout << space << "Press Enter 1 times to exit the program.";
             cin.get();
             cin.get();
-            moveText("***************THANKS COMPLATION LIST*************Thank you for booking***************",113) ;
+            moveText("**************THANKS COMPLATION LIST*************Thank you for booking**************",113) ;
         }
     
     return 0 ;
